@@ -17,6 +17,7 @@ function letterChecker() {
     }
 }
 
+//Take user input and check to see if it's valid, then run functions to display guesses, wins, losses, and push user inputs to array along with functions for computer input.
 document.onkeyup = function (event) {
     userInput = event;
     letterChecker()
@@ -65,7 +66,7 @@ function runGame() {
 
 //If User loses, check to see if User has guesses left. If true, allow userInput until userGuesses is greater than 9. 
 
-//Display guessesMade. 
+//Display 
 function displayUserGuesses() {
     var guessesMadeDiv = "Guesses Made: ";
     
@@ -79,9 +80,4 @@ function displayUserGuesses() {
                             <p>Losses: ${userLosses}</p>`;
     document.getElementById("displayGuesses").innerHTML = guessesMadeDiv + guessesLeftDiv;
 }
-
-
-//Display userGuessesLeft.
-
-//If userInput is equal to computerInput increase userWins by 1. 
 
