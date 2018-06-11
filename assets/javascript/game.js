@@ -21,7 +21,7 @@ document.onkeyup = function (event) {
     userInput = event;
     letterChecker()
     if (guessesLeft <= 0) {
-        alert("You Lose");
+        alert("You are not a psychic. I knew it! ");
         userLosses++;
         guessesLeft = 9;
         guessesMade = [];
@@ -32,7 +32,7 @@ document.onkeyup = function (event) {
         randLetter() 
         runGame()
     } else {
-        alert("Please press a valid key.");
+        alert("You already guessed that letter! Or you did not press a valid letter on your keyboard.");
         alreadyChosen = false;
     }
 
@@ -54,7 +54,7 @@ function runGame() {
     console.log("user guess: " + userInput.key)
     console.log("computer guess: " + computerInput)
     if (userInput.key === computerInput) {
-        alert("You win!")
+        alert("WOAH! You're a psychic!")
         userWins++;
         guessesLeft = 9;
         guessesMade = [];
